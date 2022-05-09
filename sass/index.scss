@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+//Sass Variables
+@import 'variables';
+
+//Base css styles
+@import 'base';
+
+//Display flex and accompanying styles
+@import 'layout';
+
+//Utilities
+@import 'utilities';
+
+/* NAVBAR STYLES */
+.navbar {
+    z-index: 10000;
+    background-image: linear-gradient(#303f2e, black);
+}
+
+.navbar h2 span {
+    transform: rotate(20deg);
+    top: -10px;
+    color: #f94a1d;
+}
+
+/* HOME STYLES */
+.home .w-40 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.welcome {
+    border: 1px solid #f94a1d;
+}
+
+.hire-me {
+    background-color: $lightOrange;
+}
+
+.explore {
+    border: 1px solid white;
+}
+
+.orange-square {
+    width: 500px;
+    height: 600px;
+    background: #f94a1d;
+    transform-origin: center;
+    transform: translate(210px, -210px) rotate(45deg) ;
+    z-index: -1;
+}
+
+.orange-feature {
+    width: 500px;
+    height: 500px;
+    background: #f94a1d;
+    border-radius: 100%;
+}
+
+.white-circle {
+    width: 390px;
+    height: 390px;
+    background: white;
+    border-radius: 100%;
+}
+
+.grey-circle {
+    width: 360px;
+    height: 360px;
+    background: rgb(233, 232, 232);
+    border-radius: 100%;
+}
+
+/* ABOUT STYLES */
+.about {
+    padding-top: 100px;
+}
+
+.skill {
+    width: 250px;
+    background-color: #2f2e31;
+}
+
+.skill-img {
+    background-color: $lightOrange;
+
+    img {
+        height: 64px;
+        width: 64px;
+    }
+}
+
+/* PROJECT STYLES */
+.projects {
+    padding-top: 100px;
+}
+
+.project-overlay {
+    background-color: rgba($color: $black, $alpha: .6);
+    height: 100%;
+    top: 0;
+    opacity: 0.2;
+}
+
+.project-overlay h3 {
+    color: rgb(255, 255, 255);
+    text-decoration: underline $lightOrange;
+    height: fit-content;
+}
+
+.zero-months h2,
+.six-months h2,
+.then-and-now h2 {
+    border-bottom: 2px solid $lightOrange;
+}
+
+.g1-col {
+    width: 50%;
+}
+
+.g1-img-one {
+    width: 100%;
+    overflow: hidden;
+}
+
+.project-overlay:hover {
+    opacity: .7;
+}
+
+.g1-img-two {
+    border: white 0px solid;
+    width: 100%;
+    height: 50%; 
+}
+
+.g1-img-three {
+    border: white 0px solid;
+    width: 100%;
+    height: 50%;
+}
+
+.oldPortfolio {
+    max-width: 500px;
+}
+
+.dual-img-one,
+.dual-img-two {
+    width: 200px;
+    height: fit-content;
+}
+
+/* contact */
+
+.contact {
+   padding-top: 100px;
+}
+
+.form-container {
+    border: 5px solid white;
+    background-color: $grey;
+}
+
+form {
+    background-color: $white;
+    max-width: 400px;
+    width: 100%;
+}
+
+.input-style {
+    background: center;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+
+/* footer */
+
+.footer {
+    background-image: linear-gradient(black, #303f2e);
+}
