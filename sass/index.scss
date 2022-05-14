@@ -24,10 +24,24 @@
     color: #f94a1d;
 }
 
+.links a {
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+}
+
+.links a:hover {
+  background-color: $lightOrange;
+}
+
 /* HOME STYLES */
 .home .w-40 {
     padding-top: 150px;
     padding-bottom: 150px;
+}
+
+.home span {
+    color: $lightOrange;
 }
 
 .welcome {
@@ -36,10 +50,20 @@
 
 .hire-me {
     background-color: $lightOrange;
+    border: 2px solid $lightOrange;
+    cursor: pointer;
 }
 
 .explore {
     border: 1px solid white;
+}
+
+.hire-me:hover,
+.explore:hover {
+    background-color: white;
+    border-color: $lightOrange;
+    color: $lightOrange;
+    transition: all .3s ease-in-out;
 }
 
 .orange-square {
@@ -73,34 +97,85 @@
 }
 
 /* ABOUT STYLES */
+
 .about {
     padding-top: 100px;
+
+    h2 {
+        border-bottom: 2px solid $lightOrange;
+    }
 }
 
 .skill {
-    width: 250px;
-    background-color: #2f2e31;
+    width: 330px;
+    background-color: white;
+    cursor: pointer;
+    filter: grayscale(1);
+
+    .skill-img {
+        background-color: white;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .skill-text {
+        background-color: white;
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+
+        p {
+            border-top-left-radius: 35px;
+            background-color: $lightOrange;
+            bottom: -60px;
+        }
+    }
 }
 
-.skill-img {
-    background-color: $lightOrange;
+.skill-img:hover .skill-text {
+    transition: all 1s ease-in-out;
+    color: red;
+}
 
-    img {
-        height: 64px;
-        width: 64px;
-    }
+.skill:hover {
+    filter: grayscale(0);
+    transition: all .5s ease-in-out;
+}
+
+.skill:hover .skill-text p {
+    transition: all .5s ease-in-out;
+    transform: translateY(-60px);
+}
+
+.latest-portfolio-code {
+    width: 70%;
+}
+
+.latest-portfolio-code img {
+    background-color: white;
+}
+
+.latest-portfolio-code h3 a{
+    text-decoration: underline $lightOrange;
 }
 
 /* PROJECT STYLES */
 .projects {
-    padding-top: 100px;
+    padding-top: 80px;
+}
+
+.personal-projects {
+
+    h2 {
+        text-decoration: underline $lightOrange;
+    }
 }
 
 .project-overlay {
     background-color: rgba($color: $black, $alpha: .6);
     height: 100%;
     top: 0;
-    opacity: 0.2;
+    opacity: 0;
+    cursor: pointer;
 }
 
 .project-overlay h3 {
@@ -109,66 +184,79 @@
     height: fit-content;
 }
 
-.zero-months h2,
-.six-months h2,
-.then-and-now h2 {
-    border-bottom: 2px solid $lightOrange;
-}
+.then-and-now {
 
-.g1-col {
-    width: 50%;
-}
-
-.g1-img-one {
-    width: 100%;
-    overflow: hidden;
-}
-
-.project-overlay:hover {
-    opacity: .7;
-}
-
-.g1-img-two {
-    border: white 0px solid;
-    width: 100%;
-    height: 50%; 
-}
-
-.g1-img-three {
-    border: white 0px solid;
-    width: 100%;
-    height: 50%;
+    h2 {
+        text-decoration: underline $lightOrange;
+    }
 }
 
 .oldPortfolio {
     max-width: 500px;
 }
 
-.dual-img-one,
-.dual-img-two {
-    width: 200px;
-    height: fit-content;
+.card {
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #252429;
+    opacity: 0;
+}
+
+.overlay:hover {
+    opacity: .8;
+    transition: all .6s ease-in-out;
+}
+
+.card-title {
+    text-decoration: underline $lightOrange;
 }
 
 /* contact */
 
 .contact {
    padding-top: 100px;
+
+   .title {
+       text-decoration: underline $lightOrange;
+   }
 }
 
-.form-container {
-    border: 5px solid white;
-    background-color: $grey;
+.contact-box {
+    box-shadow: 0px 0px 15px 0px #000000;
+    background-color: #252429;
+    width: 300px;
+}
+
+.linkedIn-icon {
+    background-color: white;
+    border-radius: 9px;
+    border: 1px solid white;
+    cursor: pointer;
+    filter: grayscale(1);
+}
+
+.linkedIn-icon:hover {
+    transition: all .3s ease-in-out;
+    filter: grayscale(0);
 }
 
 form {
-    background-color: $white;
-    max-width: 400px;
+    background-color: #252429;
+    max-width: 550px;
+    min-width: 300px;
     width: 100%;
+    box-shadow: 0px 0px 15px 0px #000000;
 }
 
 .input-style {
     background: center;
+    background-color: black;
     border: 0;
     border-bottom: 1px solid black;
 }

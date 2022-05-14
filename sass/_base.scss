@@ -12,6 +12,13 @@ body {
     width: 100vw;
 }
 
+.home, 
+.about,
+.projects  {
+    min-height: 100vh;
+    height: fit-content;
+}
+
 #root {
     overflow: hidden;
     width: 100vw;
@@ -41,8 +48,22 @@ body {
     flex-direction: row;
 }
 
+.flex-one {
+    flex: 1;
+}
+
 .row-reverse {
     flex-direction: row-reverse;
+}
+
+.font-karla {
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.font-lato {
+    font-family: 'Lato', sans-serif !important;
 }
 
 

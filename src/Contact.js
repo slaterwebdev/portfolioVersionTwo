@@ -1,57 +1,41 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import ContactTile from "./ContactTile";
 
 const Contact = () => {
-    const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('');
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [number, setNumber] = useState('');
     const [message, setMessage] = useState('');
 
+    const contactTileHref = ["mailto:adamslater1996@outlook.com" , "tel:07547620652" , "https://www.linkedin.com/in/adam-slater-web-dev/"];
+    const contactTileText = ["adamslater1996@outlook.com" , "07547620652" , "Stoke-On-Trent, England" , "Let's Connect..."];
+    const contactTileImg = ["/imgs/email.png" , "/imgs/phone.png" , "/imgs/map.png" , "/imgs/linkedin.png"];
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        const blog = { firstName, lastName, email, number, message };
+        const blog = { name, email, number, message };
     }
 
     return ( 
         <div className="contact d-flex flex-col text-center">
-            <h2 className="mt-2 mb-4">Getting In Touch</h2>
-            <div className="form-container d-flex flex-row justify-space-between m-auto w-80 br-sm">
-                <div className="m-4 w-60 text-left">
-                    <h2>My Details</h2>
-                    <p>
-                        <br />
-                        <br />
-                        Email: adamslater1996@outlook.com
-                        <br />
-                        <br />
-                        Phone: 07547620652
-                        <br />
-                        <br />
-                        <a href="https://www.linkedin.com/in/adam-slater-web-dev/" className="">
-                            <img src="/imgs/linedin.png" alt="" />
-                        </a>
-                    </p>
+            <h2 className="title mt-2 mb-1">Getting In Touch</h2>
+            <p className="font-karla">Hopefully you've enjoyed your time looking around my site, I appreciate the visit. If you'd like to work together on some capacity please get in touch. I'm open to roles as well as freelance work. Simply put - If it's a challenge I'm interested.</p>
+            <div className="form-container mt-4 d-flex flex-row justify-center align-center m-auto w-80 br-sm">
+                <div>
+                    <ContactTile contactTileHref={contactTileHref[0]} contactTileText={contactTileText[0]} contactTileImg={contactTileImg[0]} />
+                    <ContactTile contactTileHref={contactTileHref[1]} contactTileText={contactTileText[1]} contactTileImg={contactTileImg[1]} />
+                    <ContactTile contactTileText={contactTileText[2]} contactTileImg={contactTileImg[2]} />
+                    <ContactTile contactTileHref={contactTileHref[2]} contactTileText={contactTileText[3]} contactTileImg={contactTileImg[3]} />
                 </div>
-                <form onSubmit={handleSubmit} className="text-center br-xs m-4">
+                <form onSubmit={handleSubmit} className="text-center pt-2 pb-1">
                     <div>
                         <input 
-                        placeholder="First Name"
+                        placeholder="Name"
                         className="w-90 p-2 m-2 input-style text-center"
                         type="text" 
                         required 
-                        value={firstName}
-                        onChange={(e) => setFirstName(e.target.value)}
-                        />
-                    </div>
-                    <div>
-                        <input 
-                        placeholder="Last Name"
-                        className="w-90 p-2 m-2 input-style text-center"
-                        type="text" 
-                        required 
-                        value={lastName}
-                        onChange={(e) => setLastName(e.target.value)}
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
                         />
                     </div>
                     <div>
@@ -82,7 +66,7 @@ const Contact = () => {
                         onChange={(e) => setMessage(e.target.value)}
                         ></textarea>
                     </div>
-                    <button className='hire-me d-inline-block mt-4 mb-4 ml-1 mr-1 p-2 pl-4 pr-4 br-xs'>Submit</button>
+                    <button className='hire-me d-inline-block mt-3 mb-3 ml-1 mr-1 p-2 pl-4 pr-4 br-xs'>Submit</button>
                 </form>
             </div>
         </div>
