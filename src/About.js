@@ -39,10 +39,16 @@ const About = () => {
     const reactIcon = '/imgs/react.png';
     const reactContent = 'Deep understanding of React - Personal favourite, even more so than Vanilla JS!';
 
+    /* react */
+    const wpIcon = '/imgs/wordpress.png';
+    const wpContent = 'Complete understanding and competence in Wordpress (CMS)';
+
     return ( 
         <div className="about m-3">
             <h2 className='text-center mt-1 mb-2'>About Me</h2>
+
             {/* <Autotype /> */}
+            
             <div className='latest-portfolio-code m-auto d-flex justify-space-around align-center text-center m-auto'>
                 <img className='pt-1 pb-1 br-sm mb-2 mt-2' src="/imgs/cv.png" alt="coding icon" />
                 <h3 className='ml-1 mr-1 pb-2 mb-2 mt-2'><a href=''>CLICK HERE</a> To download a copy of my Resumè. Take a deeper look into all things Adam and Development.</h3>
@@ -55,6 +61,7 @@ const About = () => {
                 <Skill icon={engineeringIcon} text={engineeringContent}/>
                 <Skill icon={firestoreIcon} text={firestoreContent}/>
                 <Skill icon={githubIcon} text={githubContent}/>
+                <Skill icon={wpIcon} text={wpContent}/>
                 <Skill icon={sassIcon} text={sassContent}/>
                 <Skill icon={reactIcon} text={reactContent}/>
             </div>

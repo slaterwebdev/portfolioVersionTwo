@@ -745,7 +745,8 @@ body {
   }
   .home .w-40 {
     width: 60%;
-    margin-top: 140px;
+    margin-top: 80px;
+    padding-top: 0px;
   }
   .home .w-60 {
     justify-content: center;
@@ -775,10 +776,15 @@ body {
 
   /*Contact*/
   .contact .form-container {
+    width: 100%;
     flex-direction: column;
   }
-  .contact .contact-box {
-    width: 550px;
+  .contact .form-container div div a p {
+    width: 100%;
+  }
+  .contact .form-container form, .contact .form-container div {
+    width: 100%;
+    min-width: 100%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -819,7 +825,7 @@ body {
   }
   .home .w-40 {
     width: 100%;
-    margin-top: 80px;
+    margin-top: 20px;
   }
   .home .w-40 .welcome {
     width: 200px;
@@ -991,7 +997,7 @@ body {
 
 .skill:hover .skill-text p {
   transition: all 0.5s ease-in-out;
-  transform: translateY(-60px);
+  transform: translateY(-85px);
 }
 
 .latest-portfolio-code {

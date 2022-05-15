@@ -129,7 +129,8 @@
     
         .w-40 {
             width: 60%;
-            margin-top: 140px;
+            margin-top: 80px;
+            padding-top: 0px;
         }
 
         .w-60 {
@@ -166,11 +167,16 @@
     /*Contact*/
     .contact {
         .form-container {
+            width: 100%;
             flex-direction: column;
-        }
-
-        .contact-box {
-            width: 550px;
+    
+            div div a p {
+                width: 100% ;
+            }
+            form, div {
+                width: 100%;
+                min-width: 100%;
+            }
         }
     }
 }
@@ -221,7 +227,7 @@
     
         .w-40 {
             width: 100%;
-            margin-top: 80px ;
+            margin-top: 20px ;
 
             .welcome {
                 width: 200px ;
