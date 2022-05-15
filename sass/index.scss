@@ -12,7 +12,21 @@
 //Utilities
 @import 'utilities';
 
+@import 'mediaQueries';
+
+
 /* NAVBAR STYLES */
+.menu-icon {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    z-index: 10001;
+}
+
+.mobile-menu h2 {
+    z-index: 10001;
+}
+
 .navbar {
     z-index: 10000;
     background-image: linear-gradient(#303f2e, black);
@@ -126,7 +140,7 @@
         p {
             border-top-left-radius: 35px;
             background-color: $lightOrange;
-            bottom: -60px;
+            bottom: -90px;
         }
     }
 }
@@ -184,6 +198,15 @@
     height: fit-content;
 }
 
+.project-icons img {
+    width: 50px;
+}
+
+.bootstrap-icon {
+    background-color: white;
+    height: 40px;
+}
+
 .then-and-now {
 
     h2 {
@@ -218,7 +241,6 @@
 }
 
 /* contact */
-
 .contact {
    padding-top: 100px;
 
@@ -248,9 +270,8 @@
 
 form {
     background-color: #252429;
-    max-width: 550px;
-    min-width: 300px;
-    width: 100%;
+    width: 550px;
+    min-width: 400px;
     box-shadow: 0px 0px 15px 0px #000000;
 }
 
@@ -266,3 +287,9 @@ form {
 .footer {
     background-image: linear-gradient(black, #303f2e);
 }
+
+
+
+
+
+

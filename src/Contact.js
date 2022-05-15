@@ -21,12 +21,6 @@ const Contact = () => {
             <h2 className="title mt-2 mb-1">Getting In Touch</h2>
             <p className="font-karla">Hopefully you've enjoyed your time looking around my site, I appreciate the visit. If you'd like to work together on some capacity please get in touch. I'm open to roles as well as freelance work. Simply put - If it's a challenge I'm interested.</p>
             <div className="form-container mt-4 d-flex flex-row justify-center align-center m-auto w-80 br-sm">
-                <div>
-                    <ContactTile contactTileHref={contactTileHref[0]} contactTileText={contactTileText[0]} contactTileImg={contactTileImg[0]} />
-                    <ContactTile contactTileHref={contactTileHref[1]} contactTileText={contactTileText[1]} contactTileImg={contactTileImg[1]} />
-                    <ContactTile contactTileText={contactTileText[2]} contactTileImg={contactTileImg[2]} />
-                    <ContactTile contactTileHref={contactTileHref[2]} contactTileText={contactTileText[3]} contactTileImg={contactTileImg[3]} />
-                </div>
                 <form onSubmit={handleSubmit} className="text-center pt-2 pb-1">
                     <div>
                         <input 
@@ -68,6 +62,12 @@ const Contact = () => {
                     </div>
                     <button className='hire-me d-inline-block mt-3 mb-3 ml-1 mr-1 p-2 pl-4 pr-4 br-xs'>Submit</button>
                 </form>
+                <div>
+                    <ContactTile contactTileHref={contactTileHref[0]} contactTileText={contactTileText[0]} contactTileImg={contactTileImg[0]} />
+                    <ContactTile contactTileHref={contactTileHref[1]} contactTileText={contactTileText[1]} contactTileImg={contactTileImg[1]} />
+                    <ContactTile contactTileText={contactTileText[2]} contactTileImg={contactTileImg[2]} />
+                    <ContactTile contactTileHref={contactTileHref[2]} contactTileText={contactTileText[3]} contactTileImg={contactTileImg[3]} />
+                </div>
             </div>
         </div>
      );

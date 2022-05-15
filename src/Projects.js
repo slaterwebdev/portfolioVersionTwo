@@ -30,23 +30,26 @@ const Projects = () => {
         setThree(true);
     };
 
-    const titles = ['Look Up', 'Novo', 'Task List', 'QuickStyle'];
-    const imgUrls = ['/imgs/lookUp.jpg', '/imgs/novo.jpg',  '/imgs/taskList.jpg', '/imgs/quickstyle.jpg', '/imgs/novo.jpg',  '/imgs/novo.jpg',  '/imgs/novo.jpg'];
+    const titles = ['Look Up', 'Novo', 'Task List', 'QuickStyle', 'Portfolio 2.0'];
+    const imgUrls = ['/imgs/lookUp.jpg', '/imgs/novo.jpg',  '/imgs/taskList.jpg', '/imgs/quickstyle.jpg', '/imgs/novo.jpg',  '/imgs/novo.jpg',  '/imgs/novo.jpg' , '/imgs/portfoliov2.jpg'];
     const btnHrefs = ['https://slaterwebdev.github.io/look-up/', 'https://slaterwebdev.github.io/task-list/', 'https://slaterwebdev.github.io/novo/' , 'https://slaterwebdev.github.io/sassCssFramework/'];
     const text = [
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam expedita ipsum, cum eaque, corporis.',
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam expedita ipsum, cum eaque, corporis.',
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam expedita ipsum, cum eaque, corporis.',
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam expedita ipsum, cum eaque, corporis.'
+        'A project all about space, created with multiple NASA APIs. A responsive, mobile first designed project created using HTML, CSS, JS & Bootstrap.',
+        'My first paid freelance project for a small etsy business. It is an E-Commerce website built using HTML, CSS, JS & Bootstrap. For me a memorable first step in the world of freelancing.',
+        'A To Do List style project to highlight my ability to manipulate data & the DOM simultaniously. Built with HTML, CSS, JS & Bootstrap.',
+        'A "Bare bones" style project showcasing the CSS Library I personally built using SASS. All of the following projects use parts of this framework along with React.',
+        'A second crack at my portfolio, and a chance to showcase the many things I have learned in a short period of time. This was created with REACT and SASS'
     ];
 
     /* Column background colors */
-    const background = [{background: '#272d4d'}, {background: '#0e2c07'}, {background: 'white'}];
+    const background = [{background: '#272d4d'}, {background: '#0e2c07'}, {background: 'white'}, {background: 'black'}];
+
+    /* Project Icons */
 
     return ( 
         <div className="projects">
             <div className='personal-projects mt-4 mb-3'>
-                <div className="d-flex justify-space-between">
+                <div className="project-selector d-flex justify-space-between">
                     <h2>Personal Projects</h2>
                     <ProjectSelector btnClickOne={btnClickOne} btnClickTwo={btnClickTwo} btnClickThree={btnClickThree} />
                 </div>
@@ -57,7 +60,7 @@ const Projects = () => {
 
                 {defaultPage && 
                 <div className="d-flex justify-center pos-relative">
-                    <img src="/imgs/folder.png" />
+                    <img className="folder" src="/imgs/folder.png" />
                     <img className="pos-absolute bottom-0 right-25 w-20" src="/imgs/search.png" />
                 </div>}
 

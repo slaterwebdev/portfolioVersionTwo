@@ -12,6 +12,8 @@ $main-axis-layout-list: flex-start, flex-end, center, space-between, space-aroun
 $cross-axis-layout-list: center, flex-start, flex-end;
 $text-align: left, center, right;
 
+$flexOrder: 1, 2, 3, 4, 5, 6, 7, 8, 9;
+
 //display
 @each $val in $display {
     .d-#{$val} {
@@ -37,5 +39,12 @@ $text-align: left, center, right;
 @each $val in $text-align {
     .text-#{$val} {
         text-align: $val;
+    }
+}
+
+//Flex Order 
+@each $val in $flexOrder {
+    .flex-order-#{$val} {
+        order: $val;
     }
 }

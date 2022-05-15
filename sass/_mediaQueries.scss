@@ -1,0 +1,277 @@
+//MEDIA QUERIES
+
+@media  screen and (max-width: 920px) {
+
+    /*Navbar*/
+    .navbar {
+        flex-direction: column;
+        .mobile-menu {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        .menu-icon {
+            display: inline-block;
+        }
+    
+        .menu-icon:hover {
+            background-color: $lightOrange;
+            color: white;
+            transition: all .3s ease-in-out;
+            transform: scale(1.2);
+        }
+    
+        .links {
+            flex-direction: column;
+            width: 100%;
+            border-bottom: 1px solid $lightOrange;
+    
+            a { 
+                width: 100%;
+                text-align: center;
+            }
+        }
+    
+        .mobile-menu-open {
+            position: absolute;
+            top: 0px;
+            padding-top: 60px;
+            width: 100%;
+            background-color: black;
+            transition: transform .5s ease-in-out;
+        }
+    
+        .mobile-menu-close {
+            position: absolute;
+            top: 0px;
+            padding-top: 0px;
+            transform: translateY(-250px);
+            width: 100%;
+            background-color: black;
+            transition: transform .5s ease-in-out;
+        }
+    }
+
+    /*Home*/
+    .home {
+        .orange-square {
+            display: none;
+        }
+    
+        .orange-feature {
+            width: 350px;
+            height: 350px;
+        }
+    
+        .white-circle {
+            width: 280px;
+            height: 280px;
+        }
+    
+        .grey-circle {
+            width: 240px;
+            height: 240px;
+        }
+    
+        .w-40 {
+            width: 60%;
+            padding-top: 90px;
+        }
+    }
+
+    /*Projects*/
+    .projects {
+        padding-top: 60px ;
+        
+        .project-selector {
+            flex-direction: column;
+            justify-content: center ;
+            text-align: center ;
+            h2 {
+                margin-bottom: 10px;
+            }
+        } 
+    }
+}
+
+@media  screen and (max-width: 750px) {
+    /*Home*/
+    .home {
+        padding-top: 200px;
+        text-align: center;
+        flex-direction: column-reverse;
+        div {
+            width: 80% ;
+
+            .orange-square {
+                width: 400px ;
+                height: 600px;
+                display: block;
+            }
+            
+            .orange-feature {
+                width: 400px;
+                height: 400px;
+            }
+            
+            .white-circle {
+                width: 290px;
+                height: 290px;
+            }
+            
+            .grey-circle {
+                width: 260px;
+                height: 260px;
+            }
+        }
+    
+        .w-40 {
+            width: 60%;
+            margin-top: 140px;
+        }
+
+        .w-60 {
+            justify-content: center;
+        }
+    
+    }
+
+    /*About*/
+
+    .latest-portfolio-code {
+        flex-direction: column;
+        display: block;
+        width: 85% ;
+    }
+
+    /*Projects*/
+    .project-selector {
+        display: flex;
+
+        button {
+            margin: 5px;
+        }
+    }
+
+    .then-and-now div div {
+        flex-direction: column-reverse;
+
+        a, div {
+            width: 80%;
+        }
+    }
+
+    /*Contact*/
+    .contact {
+        .form-container {
+            flex-direction: column;
+        }
+
+        .contact-box {
+            width: 550px;
+        }
+    }
+}
+
+@media  screen and (max-width: 600px) {
+    .form-container {
+        width: 100%;
+
+        div div a p {
+            width: 100% ;
+        }
+        form, div {
+            width: 100%;
+            min-width: 100%;
+        }
+    }
+}
+
+@media  screen and (max-width: 500px) {
+
+    /*Home*/
+    .home {
+        padding-top: 160px ;
+        
+        div {
+            width: 100% ;
+
+            .orange-square {
+                width: 300px ;
+                height: 600px ;
+            }
+            
+            .orange-feature {
+                width: 300px ;
+                height: 300px ;
+            }
+            
+            .white-circle {
+                width: 220px ;
+                height: 220px ;
+            }
+            
+            .grey-circle {
+                width: 190px ;
+                height: 190px ;
+            }
+        }
+    
+        .w-40 {
+            width: 100%;
+            margin-top: 80px ;
+
+            .welcome {
+                width: 200px ;
+            }
+
+            h1,
+            h3 {
+                margin-bottom: 0 ;
+            }
+
+            p {
+                display: none;
+            }
+
+            div {
+
+                a {
+                    font-size: 12px;
+                    padding-left: 10px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+    /*About*/
+    .about {
+        margin-right: 10px;
+        margin-left: 10px;
+
+        .latest-portfolio-code {
+            
+            width: 100% ;
+        }
+    }
+
+    /*Projects*/
+
+    .projects{
+
+        .folder {
+            width: 300px;
+        }
+
+        .then-and-now div div {
+            
+    
+            a, div {
+                width: 100%;
+            }
+        }
+    }
+}

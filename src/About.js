@@ -43,9 +43,9 @@ const About = () => {
         <div className="about m-3">
             <h2 className='text-center mt-1 mb-2'>About Me</h2>
             {/* <Autotype /> */}
-            <div className='latest-portfolio-code d-flex justify-space-around align-center text-center m-auto'>
-                <img className='pt-1 pb-1 br-sm' src="/imgs/cv.png" alt="coding icon" />
-                <h3 className='ml-1 mr-1 pb-2'><a href=''>CLICK HERE</a> To download a copy of my Resumè. Take a deeper look into all things Adam and Development.</h3>
+            <div className='latest-portfolio-code m-auto d-flex justify-space-around align-center text-center m-auto'>
+                <img className='pt-1 pb-1 br-sm mb-2 mt-2' src="/imgs/cv.png" alt="coding icon" />
+                <h3 className='ml-1 mr-1 pb-2 mb-2 mt-2'><a href=''>CLICK HERE</a> To download a copy of my Resumè. Take a deeper look into all things Adam and Development.</h3>
             </div>
             <div className="skills-container d-flex justify-center flex-wrap">
                 <Skill icon={htmlIcon} text={htmlContent}/>
@@ -59,9 +59,9 @@ const About = () => {
                 <Skill icon={reactIcon} text={reactContent}/>
             </div>
 
-            <div className='latest-portfolio-code d-flex justify-space-around align-center text-center m-auto'>
-                <img className='p-2 br-sm' src="/imgs/code.png" alt="coding icon" />
-                <h3 className='ml-1 mr-1 pb-2'><a href='https://github.com/slaterwebdev/portfolioVersionTwo'>CLICK HERE</a> the code for the current portfolio you are browsing, It's fully created using React and Sass!</h3>
+            <div className='latest-portfolio-code m-auto d-flex justify-space-around align-center text-center'>
+                <img className='p-2 br-sm mb-2 mt-2' src="/imgs/code.png" alt="coding icon" />
+                <h3 className='ml-1 mr-1 pb-2 mb-2 mt-2'><a href='https://github.com/slaterwebdev/portfolioVersionTwo'>CLICK HERE</a> the code for the current portfolio you are browsing, It's fully created using React and Sass!</h3>
             </div>
         </div>
     );
