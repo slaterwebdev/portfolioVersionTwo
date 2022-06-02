@@ -2,6 +2,14 @@
 
 @media  screen and (max-width: 920px) {
 
+    .about, .projects {
+        padding-top: 50px !important;
+    }
+
+    .contact {
+        padding-top: 80px !important;
+    }
+
     /*Navbar*/
     .navbar {
         flex-direction: column;
@@ -80,19 +88,19 @@
             padding-top: 90px;
         }
     }
+}
 
-    /*Projects*/
-    .projects {
-        padding-top: 60px ;
-        
-        .project-selector {
-            flex-direction: column;
-            justify-content: center ;
-            text-align: center ;
-            h2 {
-                margin-bottom: 10px;
-            }
-        } 
+@media screen and (max-width: 835px) {
+    .project-selector {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+
+        button {
+            margin: 5px;
+            width: 80%;
+        }
     }
 }
 
@@ -131,6 +139,10 @@
             width: 60%;
             margin-top: 80px;
             padding-top: 0px;
+
+            div {
+                justify-content: center;
+            }
         }
 
         .w-60 {
@@ -148,14 +160,6 @@
     }
 
     /*Projects*/
-    .project-selector {
-        display: flex;
-
-        button {
-            margin: 5px;
-        }
-    }
-
     .then-and-now div div {
         flex-direction: column-reverse;
 

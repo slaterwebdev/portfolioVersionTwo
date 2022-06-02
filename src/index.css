@@ -636,6 +636,14 @@ body {
 }
 
 @media screen and (max-width: 920px) {
+  .about, .projects {
+    padding-top: 50px !important;
+  }
+
+  .contact {
+    padding-top: 80px !important;
+  }
+
   /*Navbar*/
   .navbar {
     flex-direction: column;
@@ -702,18 +710,17 @@ body {
     width: 60%;
     padding-top: 90px;
   }
-
-  /*Projects*/
-  .projects {
-    padding-top: 60px;
-  }
-  .projects .project-selector {
-    flex-direction: column;
-    justify-content: center;
+}
+@media screen and (max-width: 835px) {
+  .project-selector {
+    display: flex;
     text-align: center;
+    align-items: center;
+    width: 100%;
   }
-  .projects .project-selector h2 {
-    margin-bottom: 10px;
+  .project-selector button {
+    margin: 5px;
+    width: 80%;
   }
 }
 @media screen and (max-width: 750px) {
@@ -748,6 +755,9 @@ body {
     margin-top: 80px;
     padding-top: 0px;
   }
+  .home .w-40 div {
+    justify-content: center;
+  }
   .home .w-60 {
     justify-content: center;
   }
@@ -760,13 +770,6 @@ body {
   }
 
   /*Projects*/
-  .project-selector {
-    display: flex;
-  }
-  .project-selector button {
-    margin: 5px;
-  }
-
   .then-and-now div div {
     flex-direction: column-reverse;
   }
@@ -960,7 +963,7 @@ body {
   padding-top: 100px;
 }
 .about h2 {
-  border-bottom: 2px solid #f94a1d;
+  text-decoration: underline #f94a1d;
 }
 
 .skill {
@@ -1015,6 +1018,20 @@ body {
 /* PROJECT STYLES */
 .projects {
   padding-top: 80px;
+}
+
+/*Projects*/
+.project-selector {
+  flex-direction: column !important;
+  justify-content: center;
+  text-align: center;
+}
+
+.view-code {
+  background-color: #f94a1d;
+  transform: rotate(-45deg);
+  left: -40px;
+  z-index: 100001;
 }
 
 .personal-projects h2 {

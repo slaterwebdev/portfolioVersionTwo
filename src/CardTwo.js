@@ -5,9 +5,6 @@ const Card = (props) => {
     return ( 
         <div className="card pos-relative overflow-hidden br-xs d-flex align-center" style={props.cardBackground}>
             <img src={props.cardImg} className="card-image w-100" />
-            <a href={props.cardCode} className="view-code pos-absolute top-0 pt-4 pl-4 pr-4 pb-1">
-                <p>View Code!</p>
-            </a>
             <div className="overlay pos-absolute top-0 w-100 d-flex flex-col justify-center br-xs">
                 <h3 className="card-title mb-2 text-center">
                     {props.cardTitle}

@@ -116,7 +116,7 @@
     padding-top: 100px;
 
     h2 {
-        border-bottom: 2px solid $lightOrange;
+        text-decoration: underline $lightOrange;
     }
 }
 
@@ -176,6 +176,21 @@
 .projects {
     padding-top: 80px;
 }
+
+/*Projects*/
+.project-selector {
+    flex-direction: column !important;
+    justify-content: center ;
+    text-align: center ;
+} 
+
+.view-code {
+    background-color: $lightOrange;
+    transform: rotate(-45deg);
+    left: -40px;
+    z-index: 100001;
+}
+
 
 .personal-projects {
 

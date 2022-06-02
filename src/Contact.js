@@ -1,5 +1,7 @@
 import { useState } from "react";
 import ContactTile from "./ContactTile";
+import sendData from './firebase';
+
 
 const Contact = () => {
     const [name, setName] = useState('');
@@ -14,6 +16,12 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const blog = { name, email, number, message };
+        sendData(blog);
+
+        setName('');
+        setEmail('');
+        setNumber('');
+        setMessage('');
     }
 
     return ( 
