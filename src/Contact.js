@@ -81,7 +81,7 @@ const Contact = () => {
                         onChange={(e) => setMessage(e.target.value)}
                         ></textarea>
                     </div>
-                    <button className='hire-me d-inline-block mt-3 mb-3 ml-1 mr-1 p-2 pl-4 pr-4 br-xs'>Submit</button>
+                    <button className='hire-me d-inline-block mt-2 mb-3 ml-1 mr-1 p-2 pl-4 pr-4 br-xs'>Submit</button>
                 </form>
                 <div>
                     <ContactTile contactTileHref={contactTileHref[0]} contactTileText={contactTileText[0]} contactTileImg={contactTileImg[0]} />

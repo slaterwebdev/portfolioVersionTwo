@@ -959,11 +959,12 @@ body {
 .img-circle {
   width: 360px;
   height: 360px;
-  background: rgb(233, 232, 232);
+  background: white;
   border-radius: 100%;
 }
 .img-circle img {
-  width: 170%;
+  position: relative;
+  transform: translateY(30px);
 }
 
 /* ABOUT STYLES */
@@ -1138,6 +1139,7 @@ form {
   background-color: black;
   border: 0;
   border-bottom: 1px solid black;
+  font-size: 16px;
 }
 
 .submission-overlay {

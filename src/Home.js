@@ -23,7 +23,7 @@ const Home = () => {
                         <div className="pos-absolute orange-square d-flex justify-center align-center"></div>
                         <div className="white-circle d-flex justify-center align-center">
                             <div className="img-circle overflow-hidden d-flex justify-center">
-                                <img src="./imgs/selfie.jpg" alt="" />
+                                <img src="./imgs/selfie.jpg" alt="A picture of the site creator - Adam Slater" />
                             </div> 
                         </div>
                     </div>
