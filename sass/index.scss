@@ -24,11 +24,11 @@
 }
 
 .mobile-menu h2 {
-    z-index: 10001;
+    z-index: 100004;
 }
 
 .navbar {
-    z-index: 10000;
+    z-index: 100003;
     background-image: linear-gradient(#303f2e, black);
 }
 
@@ -62,7 +62,8 @@
     border: 1px solid #f94a1d;
 }
 
-.hire-me {
+.hire-me, 
+.download-cv {
     background-color: $lightOrange;
     border: 2px solid $lightOrange;
     cursor: pointer;
@@ -103,11 +104,18 @@
     border-radius: 100%;
 }
 
-.grey-circle {
+.img-circle {
     width: 360px;
     height: 360px;
     background: rgb(233, 232, 232);
     border-radius: 100%;
+    // background-image: url('../public/imgs/selfie.jpg');
+    // background-size: cover;
+    // background-repeat: no-repeat;
+
+    img {
+        width: 170%;
+    }
 }
 
 /* ABOUT STYLES */
@@ -295,6 +303,27 @@ form {
     background-color: black;
     border: 0;
     border-bottom: 1px solid black;
+}
+
+.submission-overlay {
+    height: 150vh;
+    width: 101vw;
+    left: -45px;
+    z-index: 100005;
+    background-color: rgba($color: #000000, $alpha: .7);
+    div {
+        background-color: aliceblue;
+        height: 200px;
+        width: 400px;
+        h2 {
+            color: black;
+            text-decoration: underline $lightOrange;
+        }
+
+        span {
+            color: $lightOrange;
+        }
+    }
 }
 
 /* footer */

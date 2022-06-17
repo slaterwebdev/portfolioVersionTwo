@@ -8,16 +8,21 @@ const Contact = () => {
     const [email, setEmail] = useState('');
     const [number, setNumber] = useState('');
     const [message, setMessage] = useState('');
+    const [submittedOverlay, setSubmittedOverlay] = useState(false);
 
     const contactTileHref = ["mailto:adamslater1996@outlook.com" , "tel:07547620652" , "https://www.linkedin.com/in/adam-slater-web-dev/"];
     const contactTileText = ["adamslater1996@outlook.com" , "07547620652" , "Stoke-On-Trent, England" , "Let's Connect..."];
     const contactTileImg = ["/imgs/email.png" , "/imgs/phone.png" , "/imgs/map.png" , "/imgs/linkedin.png"];
 
+    const closeOverlay = () => {
+        setSubmittedOverlay(false);
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
         const blog = { name, email, number, message };
         sendData(blog);
-
+        setSubmittedOverlay(true)
         setName('');
         setEmail('');
         setNumber('');
@@ -25,9 +30,17 @@ const Contact = () => {
     }
 
     return ( 
-        <div className="contact d-flex flex-col text-center">
+        <div className="contact d-flex flex-col text-center pos-relative">
+            {submittedOverlay && 
+            <div onClick={closeOverlay} className="submission-overlay pos-absolute top-0 d-flex justify-center align-center">
+                <div className="d-flex justify-center align-center br-xs pos-relative">
+                    <span onClick={closeOverlay} className="pos-absolute top-0 m-1 right-0">X</span>
+                    <h2>Message Submitted!</h2>
+                </div>
+            </div>}
+
             <h2 className="title mt-2 mb-1">Getting In Touch</h2>
-            <p className="font-karla">Hopefully you've enjoyed your time looking around my site, I appreciate the visit. If you'd like to work together on some capacity please get in touch. I'm open to roles as well as freelance work. Simply put - If it's a challenge I'm interested.</p>
+            <p className="font-karla">Hopefully you've enjoyed your time looking around my site, I appreciate the visit. If you'd like to work together on some capacity please get in touch. I'm open to roles as well as freelance work. Simply put - if it's a challenge I'm interested.</p>
             <div className="form-container mt-4 d-flex flex-row justify-center align-center m-auto w-80 br-sm">
                 <form onSubmit={handleSubmit} className="text-center pt-2 pb-1">
                     <div>

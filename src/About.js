@@ -1,5 +1,4 @@
 import Skill from './Skill';
-import Autotype from './Autotype';
 
 const About = () => {
 
@@ -44,15 +43,21 @@ const About = () => {
     const wpContent = 'Complete understanding and competence in Wordpress (CMS)';
 
     return ( 
-        <div className="about m-3">
+        <div className="about mt-3 ml-3 mr-3">
             <h2 className='text-center mt-1 mb-2'>About Me</h2>
-
-            {/* <Autotype /> */}
-            
-            <div className='latest-portfolio-code m-auto d-flex justify-space-around align-center text-center m-auto'>
-                <img className='pt-1 pb-1 br-sm mb-2 mt-2' src="/imgs/cv.png" alt="coding icon" />
-                <h3 className='ml-1 mr-1 pb-2 mb-2 mt-2'><a href=''>CLICK HERE</a> To download a copy of my Resumè. Take a deeper look into all things Adam and Development.</h3>
+            <p className="text-center">
+                Although I maybe relatively new to the world of development, I have managed to amass a fair amount of skills in a short space of time. 
+                Whilst I'm a naturally hardworking, motivated person, my passion for development has fueled the fire to consistantly learn. I do not have to try to love it - I just do! Coupling these traits with 7 years working as a mechanical engineer (within the nuclear sector), I have built an ability to problem solve and have fun whilst doing so! 
+                <br/>
+                <br/>
+                I'm currently working for Big Marketing, a small yet fast paced marketing agency, where I am one of two frontend developers. Therefore, I am often tasked with large amounts of responsibility, owning projects and soley communiticaing with clients. 
+            </p>
+            <div className='text-center'>
+            <button className='download-cv d-inline-block mt-2 mb-2 ml-1 mr-1 p-2 pl-4 pr-4 br-xs'>Download CV</button>
             </div>
+
+            <p className="text-center mb-2">Click on each skill box to see my level off experience with each technology.</p>
+
             <div className="skills-container d-flex justify-center flex-wrap">
                 <Skill icon={htmlIcon} text={htmlContent}/>
                 <Skill icon={cssIcon} text={cssContent}/>

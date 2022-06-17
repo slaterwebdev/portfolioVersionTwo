@@ -88,10 +88,10 @@ const Projects = () => {
         'My first paid freelance project for a small etsy business. It is an E-Commerce website built using HTML, CSS, JS & Bootstrap. For me a memorable first step in the world of freelancing.',
         'A To Do List style project to highlight my ability to manipulate data & the DOM simultaniously. Built with HTML, CSS, JS & Bootstrap.',
         'A "Bare bones" style project showcasing the CSS Library I personally built using SASS. All of the following projects use parts of this framework along with React.',
-        'A second crack at my portfolio, and a chance to showcase the many things I have learned in a short period of time. This was created with REACT and SASS',
-        'Created whilst at Big Marketing for a car showroom company in London. Built Using Html, CSS, JS, BOOTSTRAP, Handlebars, some PHP and Mailgun. This is password protected, so a site tour from myself would be needed to see further.',
+        'A second crack at my portfolio, and a chance to showcase the many things I have learned in a short period of time. This was created with REACT, SASS & Google firestore',
+        'Created whilst at Big Marketing for a car showroom company in London. Built Using HTML, CSS, JS, BOOTSTRAP, Handlebars, some PHP and Mailgun. This is password protected, so a site tour from myself would be needed to see further.',
         'A small site for a car purchasing company using HTML, CSS, JS, BOOTSTRAP and Mailgun!',
-        'A full Wordpress build for a Power company. A contract with their sister site Clearwater Fire was awarded due to my success in this project.'
+        'A full Wordpress build for a Power company. A contract with their sister site Clearwater Fire was awarded due to my success so far in this project. (Site is still under construction)'
     ];
 
     /* Column background colors */
@@ -108,7 +108,17 @@ const Projects = () => {
                 </div>
 
                 <p className="text-center mt-2 font-karla">
-                    Welcome to the Projects page, here you will find sections of projects created by yours truely. There is a section dedicated to the projects I created before I had my first dev role, there is also one showcasing projects I've made since then. The final section is a comparison between the two to demonstrate the rapid growth my abilities have seen, and will continue to see as I work with even more great people/companies!
+                    Welcome to my projects page, here you will find various work created by yours truely. 
+                    
+                    I have split my work into four sections:
+                    
+                    The first section is dedicated to the projects I created prior to my first dev role (0 MONTHS EXP PROJECTS).
+                    
+                    The second showcases the projects that I have made since (6 MONTHS EXP PROJECTS). 
+
+                    The comparison section was created to show my personal projects at both 0 and 6 months side by side. This shows in a clear manner my development progression.  
+                    
+                     The final section shows samples of my current commercial experience. 
                 </p>
 
                 {defaultPage && 
@@ -129,10 +139,7 @@ const Projects = () => {
                                 <img className="br-xs w-100" src="/imgs/oldPortfolio.jpg" alt="Old Portfolio" />
                             </a>
                             <div className="text-center d-inline-block w-30 m-2">
-                                <h2 className="mb-2">Then and Now</h2>
-                                <p className='mb-4 font-karla'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam expedita ipsum, cum eaque, corporis, veniam eum ad autem cupiditate animi architecto temporibus asperiores porro pariatur vel! Autem labore beatae harum ab, iusto ipsa accusamus corrupti.
-                                </p>
+                                <h3 className="mb-2">Then and Now</h3>
                                 <a href='https://slaterwebdev.github.io/slaterwebdev/' className='hire-me d-inline-block p-2 pl-4 pr-4 br-xs'>View portfolio v1</a>
                             </div>
                         </div>

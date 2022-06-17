@@ -9,12 +9,13 @@ const PersonalProjectsTwo = (props) => {
     const cardCode = props.codeLink;
     return ( 
         <div className="d-flex flex-wrap justify-center mt-3">
-            <div className="project-icons top-0 d-flex w-100 justify-center">
+            <div className="project-icons top-0 d-flex w-100 justify-center flex-wrap">
                 <img className='m-1' src="/imgs/html.png" alt="html icon" />
                 <img className='m-1' src="/imgs/css.png" alt="css icon" />
                 <img className='m-1' src="/imgs/js.png" alt="js icon" />
-                <img className='m-1' src="/imgs/react.png" alt="js icon" />
-                <img className='m-1' src="/imgs/sass.png" alt="js icon" />
+                <img className='m-1' src="/imgs/react.png" alt="react icon" />
+                <img className='m-1' src="/imgs/sass.png" alt="sass icon" />
+                <img className='m-1' src="/imgs/firestore.png" alt="sass icon" />
             </div>
             <Card cardCode={cardCode[3]} cardTitle={cardTitle[3]} cardText={cardText[3]} cardImg={cardImg[3]} cardBtnHref={cardBtnHref[3]} cardBackground={cardBackground[2]} />
             <Card cardCode={cardCode[4]} cardTitle={cardTitle[4]} cardText={cardText[4]} cardImg={cardImg[7]} cardBtnHref={cardBtnHref[0]} cardBackground={cardBackground[3]} />
