@@ -12,7 +12,7 @@ const Contact = () => {
 
     const contactTileHref = ["mailto:adamslater1996@outlook.com" , "tel:07547620652" , "https://www.linkedin.com/in/adam-slater-web-dev/"];
     const contactTileText = ["adamslater1996@outlook.com" , "07547620652" , "Stoke-On-Trent, England" , "Let's Connect..."];
-    const contactTileImg = ["/imgs/email.png" , "/imgs/phone.png" , "/imgs/map.png" , "/imgs/linkedin.png"];
+    const contactTileImg = ["./imgs/email.png" , "./imgs/phone.png" , "./imgs/map.png" , "./imgs/linkedin.png"];
 
     const closeOverlay = () => {
         setSubmittedOverlay(false);

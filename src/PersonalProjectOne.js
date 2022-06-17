@@ -11,11 +11,11 @@ const PersonalProjectsOne = (props) => {
     return ( 
         <div className="d-flex flex-wrap justify-center mt-3 pos-relative">
             <div className="project-icons top-0 d-flex w-100 justify-center">
-                <img className='m-1' src="/imgs/html.png" alt="html icon" />
-                <img className='m-1' src="/imgs/css.png" alt="css icon" />
-                <img className='m-1' src="/imgs/js.png" alt="js icon" />
+                <img className='m-1' src="./imgs/html.png" alt="html icon" />
+                <img className='m-1' src="./imgs/css.png" alt="css icon" />
+                <img className='m-1' src="./imgs/js.png" alt="js icon" />
                 <div className="bootstrap-icon br-sm m-1">
-                  <img src="/imgs/bootstrap.png" alt="bootstrap icon" />
+                  <img src="./imgs/bootstrap.png" alt="bootstrap icon" />
                 </div>
             </div>
             <Card cardCode={cardCode[0]} cardTitle={cardTitle[0]} cardText={cardText[0]} cardImg={cardImg[0]} cardBtnHref={cardBtnHref[0]} cardBackground={cardBackground[0]} />

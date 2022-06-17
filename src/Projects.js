@@ -48,7 +48,9 @@ const Projects = () => {
         'https://github.com/slaterwebdev/novo', 
         'https://github.com/slaterwebdev/task-list', 
         'https://github.com/slaterwebdev/sassCssFramework', 
-        'https://github.com/slaterwebdev/portfolioVersionTwo'
+        'https://github.com/slaterwebdev/portfolioVersionTwo',
+        'https://github.com/slaterwebdev/reachchatapp',
+        'https://github.com/slaterwebdev/wordlereact'
     ];
 
     const titles = [
@@ -59,20 +61,23 @@ const Projects = () => {
         'Portfolio 2.0', 
         'Brayleys Event Site', 
         'WowBuyAnyCar', 
-        'Clearwater Electrical'
+        'Clearwater Electrical',
+        'Reach - Live Chat App',
+        'Wordle - React clone'
     ];
     const imgUrls = [
-        '/imgs/lookUp.jpg', 
-        '/imgs/novo.jpg',  
-        '/imgs/taskList.jpg', 
-        '/imgs/quickstyle.jpg', 
-        '/imgs/novo.jpg',  
-        '/imgs/novo.jpg',  
-        '/imgs/novo.jpg' , 
-        '/imgs/portfoliov2.jpg', 
-        '/imgs/brayleys.jpg', 
-        '/imgs/wowbuyanycar.jpg', 
-        '/imgs/clearwaterElectrical.jpg'
+        './imgs/lookUp.jpg', 
+        './imgs/novo.jpg',  
+        './imgs/taskList.jpg', 
+        './imgs/quickstyle.jpg', 
+        './imgs/reach.png',  
+        './imgs/wordle.png',  
+        './imgs/novo.jpg' , 
+        './imgs/portfoliov2.jpg', 
+        './imgs/brayleys.jpg', 
+        './imgs/wowbuyanycar.jpg', 
+        './imgs/clearwaterElectrical.jpg',
+        './imgs/wordle.png'
     ];
     const btnHrefs = [
         'https://slaterwebdev.github.io/look-up/', 
@@ -81,7 +86,9 @@ const Projects = () => {
         'https://slaterwebdev.github.io/sassCssFramework/', 
         'https://brayleysvipevent.co.uk/', 
         'https://www.wowbuyanycar.co.uk/', 
-        'https://staging.clearwaterelectrical.com/'
+        'https://staging.clearwaterelectrical.com/',
+        'https://slaterwebdev.github.io/reachchatapp/',
+        'https://slaterwebdev.github.io/wordlereact/'
     ];
     const text = [
         'A project all about space, created with multiple NASA APIs. A responsive, mobile first designed project created using HTML, CSS, JS & Bootstrap.',
@@ -91,11 +98,13 @@ const Projects = () => {
         'A second crack at my portfolio, and a chance to showcase the many things I have learned in a short period of time. This was created with REACT, SASS & Google firestore',
         'Created whilst at Big Marketing for a car showroom company in London. Built Using HTML, CSS, JS, BOOTSTRAP, Handlebars, some PHP and Mailgun. This is password protected, so a site tour from myself would be needed to see further.',
         'A small site for a car purchasing company using HTML, CSS, JS, BOOTSTRAP and Mailgun!',
-        'A full Wordpress build for a Power company. A contract with their sister site Clearwater Fire was awarded due to my success so far in this project. (Site is still under construction)'
+        'A full Wordpress build for a Power company. A contract with their sister site Clearwater Fire was awarded due to my success so far in this project. (Site is still under construction)',
+        'A live chat app made with React, Sass & Google firestore for the backend data storage.',
+        'A project I am paticularly happy with due to the code organisation and the animations within the game. Built with React, and Google Firebase.'
     ];
 
     /* Column background colors */
-    const background = [{background: '#272d4d'}, {background: '#0e2c07'}, {background: 'white'}, {background: 'black'}];
+    const background = [{background: '#272d4d'}, {background: '#0e2c07'}, {background: 'white'}, {background: 'black'}, {background:'#446ab0'} ];
 
     /* Project Icons */
 
@@ -123,8 +132,8 @@ const Projects = () => {
 
                 {defaultPage && 
                 <div className="d-flex justify-center pos-relative">
-                    <img className="folder" src="/imgs/folder.png" />
-                    <img className="pos-absolute bottom-0 right-25 w-20" src="/imgs/search.png" />
+                    <img className="folder" src="./imgs/folder.png" />
+                    <img className="pos-absolute bottom-0 right-25 w-20" src="./imgs/search.png" />
                 </div>}
 
                 {btnOne && <PersonalProjectsOne title={titles} imgUrls={imgUrls} btnHrefs={btnHrefs} text={text} background={background} codeLink={codeLink} />}
@@ -136,7 +145,7 @@ const Projects = () => {
                     <div>
                         <div className="d-flex align-center row-reverse justify-center m-2">
                             <a className='oldPortfolio d-inline-block m-2' href="https://slaterwebdev.github.io/slaterwebdev/">
-                                <img className="br-xs w-100" src="/imgs/oldPortfolio.jpg" alt="Old Portfolio" />
+                                <img className="br-xs w-100" src="./imgs/oldPortfolio.jpg" alt="Old Portfolio" />
                             </a>
                             <div className="text-center d-inline-block w-30 m-2">
                                 <h3 className="mb-2">Then and Now</h3>
