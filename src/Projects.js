@@ -88,7 +88,8 @@ const Projects = () => {
         'https://www.wowbuyanycar.co.uk/', 
         'https://staging.clearwaterelectrical.com/',
         'https://slaterwebdev.github.io/reachchatapp/',
-        'https://slaterwebdev.github.io/wordlereact/'
+        'https://slaterwebdev.github.io/wordlereact/',
+        'slaterwebdev.co.uk'
     ];
     const text = [
         'A project all about space, created with multiple NASA APIs. A responsive, mobile first designed project created using HTML, CSS, JS & Bootstrap.',
