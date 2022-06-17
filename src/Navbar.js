@@ -25,7 +25,7 @@ const Navbar = () => {
             </div>
             <div className={navBtn ? "mobile-menu-open" : "mobile-menu-close"}>
                 <div className="links w-50 d-flex align-center justify-space-between font-lg">
-                    <Link className='link-anchor' to='/portfolioversiontwo/' >Home</Link>
+                    <Link className='link-anchor' to='/' >Home</Link>
                     <Link className='link-anchor' to='/about' >About</Link>
                     <Link className='link-anchor' to='/projects' >Projects</Link>
                     <Link className='link-anchor' to='/contact' >Contact</Link>
