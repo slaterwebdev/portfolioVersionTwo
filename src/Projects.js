@@ -104,7 +104,7 @@ const Projects = () => {
         'A small site for a car purchasing company using HTML, CSS, JS, BOOTSTRAP and Mailgun!',
         'A full Wordpress build for a Power company. A contract with their sister site Clearwater Fire was awarded due to my success so far in this project. (Site is still under construction)',
         'A live chat app made with React, Sass & Google firestore for the backend data storage.',
-        'A project I am paticularly happy with due to the code organisation and the animations within the game. Built with React, and Google Firebase.',
+        'A Wordle clone built with React and Firebase. The project is fully repsonsive but has been built to be used on desktop only, due to the nature of the keyboard functionality.',
         'A project I had a lot of fun coding using the Pokemon Api. Made with React and Sass!'
     ];
 
