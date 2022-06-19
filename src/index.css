@@ -795,6 +795,12 @@ body {
   }
 }
 @media screen and (max-width: 600px) {
+  /*projects*/
+  .mobile-aid {
+    display: block !important;
+  }
+
+  /*contact*/
   .form-container {
     width: 100%;
   }
@@ -1034,6 +1040,10 @@ body {
   flex-direction: column !important;
   justify-content: center;
   text-align: center;
+}
+
+.mobile-aid {
+  display: none;
 }
 
 .view-code {

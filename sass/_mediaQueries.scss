@@ -186,6 +186,13 @@
 }
 
 @media  screen and (max-width: 600px) {
+
+    /*projects*/
+    .mobile-aid {
+        display: block !important;
+    }
+
+    /*contact*/
     .form-container {
         width: 100%;
 

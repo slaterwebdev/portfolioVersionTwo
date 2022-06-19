@@ -140,6 +140,12 @@ const Projects = () => {
                     The comparison section was created to show my personal projects at both 0 and 6 months side by side. This shows in a clear manner my development progression.  
                     
                      The final section shows samples of my current commercial experience. 
+
+                     <br/><br/>
+
+                     <span className="mt-2 mobile-aid text-center">
+                       Click on each tile and an overlay containing information will pop up!
+                     </span>
                 </p>
 
                 {defaultPage && 
