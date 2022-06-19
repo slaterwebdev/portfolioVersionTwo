@@ -50,7 +50,8 @@ const Projects = () => {
         'https://github.com/slaterwebdev/sassCssFramework', 
         'https://github.com/slaterwebdev/portfolioVersionTwo',
         'https://github.com/slaterwebdev/reachchatapp',
-        'https://github.com/slaterwebdev/wordlereact'
+        'https://github.com/slaterwebdev/wordlereact',
+        'https://github.com/slaterwebdev/pokemon-react'
     ];
 
     const titles = [
@@ -63,7 +64,8 @@ const Projects = () => {
         'WowBuyAnyCar', 
         'Clearwater Electrical',
         'Reach - Live Chat App',
-        'Wordle - React clone'
+        'Wordle - React clone',
+        'Pokedex - React'
     ];
     const imgUrls = [
         './imgs/lookUp.jpg', 
@@ -72,7 +74,7 @@ const Projects = () => {
         './imgs/quickstyle.jpg', 
         './imgs/reach.png',  
         './imgs/wordle.png',  
-        './imgs/novo.jpg' , 
+        './imgs/pokedex.png', 
         './imgs/portfoliov2.jpg', 
         './imgs/brayleys.jpg', 
         './imgs/wowbuyanycar.jpg', 
@@ -89,7 +91,8 @@ const Projects = () => {
         'https://staging.clearwaterelectrical.com/',
         'https://slaterwebdev.github.io/reachchatapp/',
         'https://slaterwebdev.github.io/wordlereact/',
-        'slaterwebdev.co.uk'
+        'slaterwebdev.co.uk',
+        'https://slaterwebdev.github.io/pokemon-react/'
     ];
     const text = [
         'A project all about space, created with multiple NASA APIs. A responsive, mobile first designed project created using HTML, CSS, JS & Bootstrap.',
@@ -101,11 +104,19 @@ const Projects = () => {
         'A small site for a car purchasing company using HTML, CSS, JS, BOOTSTRAP and Mailgun!',
         'A full Wordpress build for a Power company. A contract with their sister site Clearwater Fire was awarded due to my success so far in this project. (Site is still under construction)',
         'A live chat app made with React, Sass & Google firestore for the backend data storage.',
-        'A project I am paticularly happy with due to the code organisation and the animations within the game. Built with React, and Google Firebase.'
+        'A project I am paticularly happy with due to the code organisation and the animations within the game. Built with React, and Google Firebase.',
+        'A project I had a lot of fun coding using the Pokemon Api. Made with React and Sass!'
     ];
 
     /* Column background colors */
-    const background = [{background: '#272d4d'}, {background: '#0e2c07'}, {background: 'white'}, {background: 'black'}, {background:'#446ab0'} ];
+    const background = [
+        {background: '#272d4d'}, 
+        {background: '#0e2c07'}, 
+        {background: 'white'}, 
+        {background: 'black'}, 
+        {background:'#446ab0'}, 
+        {background: '#bf2633'} 
+    ];
 
     /* Project Icons */
 

@@ -21,6 +21,7 @@ const PersonalProjectsTwo = (props) => {
             <Card cardCode={cardCode[4]} cardTitle={cardTitle[4]} cardText={cardText[4]} cardImg={cardImg[7]} cardBtnHref={cardBtnHref[9]} cardBackground={cardBackground[3]} />
             <Card cardCode={cardCode[5]} cardTitle={cardTitle[8]} cardText={cardText[8]} cardImg={cardImg[4]} cardBtnHref={cardBtnHref[7]} cardBackground={cardBackground[4]} />
             <Card cardCode={cardCode[6]} cardTitle={cardTitle[9]} cardText={cardText[9]} cardImg={cardImg[5]} cardBtnHref={cardBtnHref[8]} cardBackground={cardBackground[2]} />
+            <Card cardCode={cardCode[7]} cardTitle={cardTitle[10]} cardText={cardText[10]} cardImg={cardImg[6]} cardBtnHref={cardBtnHref[10]} cardBackground={cardBackground[5]} />
         </div>
     );
 }
