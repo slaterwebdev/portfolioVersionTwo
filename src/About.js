@@ -53,7 +53,7 @@ const About = () => {
                 I'm currently working for Big Marketing, a small yet fast paced marketing agency, where I am one of two frontend developers. Therefore, I am often tasked with large amounts of responsibility, owning projects and soley communiticaing with clients. 
             </p>
             <div className='text-center'>
-            <button className='download-cv d-inline-block mt-2 mb-2 ml-1 mr-1 p-2 pl-4 pr-4 br-xs'>Download CV</button>
+            <a href="./pdfs/adamslatercv.pdf" className='download-cv d-inline-block mt-2 mb-2 ml-1 mr-1 p-2 pl-4 pr-4 br-xs'>Download CV</a>
             </div>
 
             <p className="text-center mb-2">Click on each skill box to see my level off experience with each technology.</p>
