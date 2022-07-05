@@ -51,7 +51,8 @@ const Projects = () => {
         'https://github.com/slaterwebdev/portfolioVersionTwo',
         'https://github.com/slaterwebdev/reachchatapp',
         'https://github.com/slaterwebdev/wordlereact',
-        'https://github.com/slaterwebdev/pokemon-react'
+        'https://github.com/slaterwebdev/pokemon-react',
+        'https://github.com/slaterwebdev/currency-converter'
     ];
 
     const titles = [
@@ -65,7 +66,8 @@ const Projects = () => {
         'Clearwater Electrical',
         'Reach - Live Chat App',
         'Wordle - React clone',
-        'Pokedex - React'
+        'Pokedex - React',
+        'Currency Converter'
     ];
     const imgUrls = [
         './imgs/lookUp.jpg', 
@@ -79,7 +81,7 @@ const Projects = () => {
         './imgs/brayleys.jpg', 
         './imgs/wowbuyanycar.jpg', 
         './imgs/clearwaterElectrical.jpg',
-        './imgs/wordle.png'
+        './imgs/currentSea.jpeg'
     ];
     const btnHrefs = [
         'https://slaterwebdev.github.io/look-up/', 
@@ -92,7 +94,8 @@ const Projects = () => {
         'https://slaterwebdev.github.io/reachchatapp/',
         'https://slaterwebdev.github.io/wordlereact/',
         'slaterwebdev.co.uk',
-        'https://slaterwebdev.github.io/pokemon-react/'
+        'https://slaterwebdev.github.io/pokemon-react/',
+        "https://slaterwebdev.github.io/currency-converter/"
     ];
     const text = [
         'A project all about space, created with multiple NASA APIs. A responsive, mobile first designed project created using HTML, CSS, JS & Bootstrap.',
@@ -105,7 +108,8 @@ const Projects = () => {
         'A full Wordpress build for a Power company. A contract with their sister site Clearwater Fire was awarded due to my success so far in this project. (Site is still under construction)',
         'A live chat app made with React, Sass & Google firestore for the backend data storage.',
         'A Wordle clone built with React and Firebase. The project is fully repsonsive but has been built to be used on desktop only, due to the nature of the keyboard functionality.',
-        'A project I had a lot of fun coding using the Pokemon Api. Made with React and Sass!'
+        'A project I had a lot of fun coding using the Pokemon Api. Made with React and Sass!',
+        'A simple currency conversion app using redux and typescript, whilst it may seem over engineered this project was designed to showcase my redux & TS knowledge. Please check out the code!'
     ];
 
     /* Column background colors */

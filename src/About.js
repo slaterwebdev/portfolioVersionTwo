@@ -36,11 +36,15 @@ const About = () => {
 
     /* react */
     const reactIcon = './imgs/react.png';
-    const reactContent = 'Deep understanding of React - Personal favourite, even more so than Vanilla JS!';
+    const reactContent = 'Deep understanding of React including Redux - Personal favourite, even more so than Vanilla JS!';
 
     /* react */
     const wpIcon = './imgs/wordpress.png';
     const wpContent = 'Complete understanding and competence in Wordpress (CMS)';
+
+    /* typescript */
+    const tsIcon = './imgs/typescript.png';
+    const tsContent = 'Solid base knowledge of Typescript'; 
 
     return ( 
         <div className="about mt-3 ml-3 mr-3">
@@ -69,6 +73,7 @@ const About = () => {
                 <Skill icon={wpIcon} text={wpContent}/>
                 <Skill icon={sassIcon} text={sassContent}/>
                 <Skill icon={reactIcon} text={reactContent}/>
+                <Skill icon={tsIcon} text={tsContent}/>
             </div>
 
             <div className='latest-portfolio-code m-auto d-flex justify-space-around align-center text-center'>
